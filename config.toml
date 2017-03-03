@@ -1,0 +1,11 @@
+baseurl = "https://dongri.github.io/"
+languageCode = "en-us"
+title = "D"
+# theme = "crisp"
+# theme = "pixyll"
+theme = "boro"
+
+[params]
+  message = "hello world"
+[permalinks]
+  post = "/:year/:month/:title/"
