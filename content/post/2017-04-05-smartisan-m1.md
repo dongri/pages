@@ -14,6 +14,10 @@ tags = ['phone', 'android']
 Google Play Storeは別途検索してインストールすればOK.インストール環境して、Googleアカウント連携すると
 連絡先、写真、カレンダーなどが同期できる。
 
+### 追記
+SmartisanのStoreでGoogle Play StoreインストールするとGoogle Play Servicesが先にインストール
+されて再起動される、その後Play Storeがインストールさるので、その後Googleアカウント連携できる。
+
 # iijモバイルネットワーク設定
 ```
 APN: iijmio.jp
