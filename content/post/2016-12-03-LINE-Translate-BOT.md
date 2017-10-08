@@ -6,7 +6,7 @@ tags = ["Blog", "LINE", "BOT"]
 
 LINE BOTがMessaging apiを正式にリリースしたので翻訳BOTを作りました。
 
-<a href="https://wise.guncy.com" target="_blank">wise.guncy.com</a>
+<a href="https://wise.gitly.org" target="_blank">https://wise.gitly.org</a>
 
 公式の通訳BOTも何個かあるのに何で今更翻訳BOT? と思う人もいるかも知らないですが、理由は2つあります。
 
