@@ -26,6 +26,9 @@ git push -f origin master
 
 # New Deploy
 cd public
+git init
+git remote add origin git@github.com:dongri/dongri.github.io.git 
+
 git add -A
 # Commit changes.
 msg="rebuilding site `date`"
