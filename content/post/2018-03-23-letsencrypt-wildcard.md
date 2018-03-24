@@ -126,7 +126,7 @@ server {
     ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
     ssl_ciphers AESGCM:HIGH:!aNULL:!MD5;
     ssl_prefer_server_ciphers on;
-    root /usr/share/nginx/html/nilth.com;
+    root /usr/share/nginx/html/hackerth.com;
 }
 ```
 
@@ -151,7 +151,7 @@ server {
     ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
     ssl_ciphers AESGCM:HIGH:!aNULL:!MD5;
     ssl_prefer_server_ciphers on;
-    root /usr/share/nginx/html/nilth.com/girl;
+    root /usr/share/nginx/html/hackerth.com/girl;
 }
 ```
 
