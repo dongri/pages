@@ -164,4 +164,21 @@ $ ./certbot-auto renew
 
 昔みたいにサブドメイン作成する度に `/certbot-auto certonly --webroot ***` 打たなくて良くなった。
 
+## 追記
+更新には `./certbot-auto renew --force-renewal` すろと
 
+```
+The error was: PluginError('An authentication script must be provided with --manual-auth-hook when using the manual plugin non-interactively.',) 
+```
+こんなエラーで更新出来なかった。
+
+```
+$ ./certbot-auto certonly --manual \
+-d *.hackerth.com -d hackerth.com \
+-m dongrify@gmail.com \
+--agree-tos \
+--manual-public-ip-logging-ok \
+--preferred-challenges dns-01 \
+--server https://acme-v02.api.letsencrypt.org/directory
+```
+もう一回TXT認証させて更新。
