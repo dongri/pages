@@ -165,13 +165,12 @@ $ ./certbot-auto renew
 昔みたいにサブドメイン作成する度に `/certbot-auto certonly --webroot ***` 打たなくて良くなった。
 
 ## 追記
-更新には `./certbot-auto renew --force-renewal` すろと
+更新で `$ ./certbot-auto renew --force-renewal` にすると
 
 ```
 The error was: PluginError('An authentication script must be provided with --manual-auth-hook when using the manual plugin non-interactively.',) 
 ```
 こんなエラーで更新出来なかった。
-
 ```
 $ ./certbot-auto certonly --manual \
 -d *.hackerth.com -d hackerth.com \
