@@ -25,6 +25,7 @@ header {
 	left: 0;
 	height:100%;
 	width:13.5em;
+	text-align: center;
 }
 #content {
 	display: block;
