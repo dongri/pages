@@ -20,6 +20,6 @@ $ sudo ./Google\ Chrome --app="https://google.com" --incognito
 
 ### Windows
 ```
-> cd /Program Files (x86)\Google\Chrome\Application
+> cd "C:\Program Files (x86)\Google\Chrome\Application"
 > chrome.exe --app="https://google.com" --incognito
 ```
