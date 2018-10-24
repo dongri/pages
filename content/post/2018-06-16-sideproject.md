@@ -8,13 +8,13 @@ tags = ['project', 'ruby']
 
 今月1日仙台言ってRubyKaigi参加して来ました。印象に残ってるのは牡蠣でしたね。本当にうまかったんです。普段勉強会、カンファレンスまったく行かない自分にはRubyKaigiが結構新鮮な感じでした。世界中からRubyを愛してる人達が集まって三日間Rubyについて語るのがすごいと思いました。三日間もあるし、Rubyも結構久しぶりだし、これを機会にRubyでなんか作ってみようと思いました。いろいろ悩んだ結果投げ銭サービスを作ることにしました。
 
-https://merci.social
+https://merci.hackerth.com
 
 Ruby, Sinatra, Postgres, Bulma, Stripe, Docker を使って構築されてます。Twitterログインでアカウント作って、Twitter Usernameでユーザー検索して少額のお金を投げる非常にシンプルなサービスです。
 
 バックグラウンドイメージをアクセス毎に変わるようにしたのですが、使ってるpcisum.photosが若干遅くて、Tokyo Regionで少しでも早く表示できるようにして作ったのがvia photosでした。
 
-https://via.photos
+https://via.photos (shutdown)
 
 Nodejs, Coffeescript, Dockerを使って構築されてます。
 写真はunsplash.comのものを使って、作ったChrome Extensionで新しいタブを開く度に画像をサーバーにダウンロードして溜まっていきます。そのデータを使ってリクエスト来ると指定されたサイズで返すようにしてます。Webページデザインする時とか、アプリ作る時とかダミーのイメージでテストできるので便利かと思います。
