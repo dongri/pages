@@ -7,9 +7,9 @@ tags = ['shortener', 'python', 'goo.gl']
 goo.glサービスの終了ニュースで「短縮URLサービス作ってみた」の記事とか見かけたので、ちょうど自分も一ヶ月ほど前に作ったものがあったのでその解説をしようと思います。
 作ってみたきっかけはサイドプロジェクトでSMS送信のところがあって、140文字の制限で長いURLは送れませんでした。それでGo言語用の [go-shortener](https://github.com/dongri/go-shortener) というライブラリ？まで作ってbit.lyとgoo.glを使ったのですが、ちょうどその時５日間の休みを取って海外旅行したので、飛行機の中と旅行先で自前の短縮URLサービスを作ってみたくなって作りました。
 
-https://clacky.org
+https://shortener.hackerth.com
 
-clacky.org ドメインは旅行先のシンガポールClarke Quayから来てます。（ドメインは短くないですが）
+~~clacky.org ドメインは旅行先のシンガポールClarke Quayから来てます。（ドメインは短くないですが）~~~
 
 ### 一定長さの文字列にする
 ハッシュ関数を使ってすべての文字列を一定長さにする方法もありますが、
