@@ -68,9 +68,9 @@ https://www.didiglobal.com
 ## ofo
 <img src="https://lh3.googleusercontent.com/sLCl6Mc9kCDFW7G01y86QZhtRMEZriI3dwp9Z7IISFgOErRq1O7ZbRvjc1eSBPElTZA=s360-rw" width="100">
 
-https://www.ofo.com
-
 [App Store](https://itunes.apple.com/jp/app/id1190831637?mt=8) / [Play Store](https://play.google.com/store/apps/details?id=so.ofo.abroad)
+
+https://www.ofo.com
 
 シェアサイクル
 
@@ -100,9 +100,9 @@ https://mobike.com
 ## 饿了么
 <img src="https://lh3.googleusercontent.com/xyXwOIulCG0kDwR1V9Fp_Oi3RvotaEZ8pva2JhUtzQREl2iLTkP3gu4CUiEHQOGr06Cp=s360-rw" width="100">
 
-https://www.ele.me
-
 [App Store](https://itunes.apple.com/cn/app/id507161324?mt=8) / [Play Store](https://play.google.com/store/apps/details?id=me.ele)
+
+https://www.ele.me
 
 日本語で言うと「お腹すいた？」という出前アプリ
 
@@ -128,9 +128,9 @@ https://www.meituan.com
 ## 大众点评
 <img src="https://lh3.googleusercontent.com/cA-H0TUy1TuRC4ftjg7mDhVCcuLjpU5L3cKO3lZRmNdvsyRctQRyWE7ye8n35SnrTIqc=s360-rw" width="100">
 
-https://www.dianping.com/
-
 [App Store](https://itunes.apple.com/us/app/id351091731?mt=8) / [Play Store](https://play.google.com/store/apps/details?id=com.dianping.v1)
+
+https://www.dianping.com/
 
 食べログみたいなアプリですが、出前もできます
 
