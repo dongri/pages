@@ -8,7 +8,7 @@ tags = ['china', 'app']
 
 <hr>
 
-## 高德地图
+## 高德地图 - Gaode
 <img src="https://lh3.googleusercontent.com/l3jypy2cfNXc6R3vWstSgWHqZz-WKn5K3HyDSjDehwoh8rrsXan1byG45TQzDTkZ3azG=s360-rw" width="100">
 
 [App Store](https://itunes.apple.com/jp/app/id461703208?mt=8) / [Play Store](https://play.google.com/store/apps/details?id=com.autonavi.minimap&hl=ja)
@@ -99,7 +99,7 @@ https://mobike.com
 
 <hr>
 
-## 饿了么
+## 饿了么 - ele.me
 <img src="https://lh3.googleusercontent.com/xyXwOIulCG0kDwR1V9Fp_Oi3RvotaEZ8pva2JhUtzQREl2iLTkP3gu4CUiEHQOGr06Cp=s360-rw" width="100">
 
 [App Store](https://itunes.apple.com/cn/app/id507161324?mt=8) / [Play Store](https://play.google.com/store/apps/details?id=me.ele)
@@ -113,7 +113,7 @@ https://www.ele.me
 
 <hr>
 
-## 美团外卖 - meituan
+## 美团外卖 - Meituan
 <img src="https://lh3.ggpht.com/cWZZ84KujAxE6qQO81RaBdkG2_sX8MQR6Gy9EkfR4GCnkMWKNmtUOlZqb4xHOekCqI3C=s360-rw" width="100">
 
 [App Store](https://itunes.apple.com/jp/app/id737310995?mt=8) / [Android apk](https://waimai.meituan.com/download?channel=1013)
@@ -127,7 +127,7 @@ https://www.meituan.com
 
 <hr>
 
-## 大众点评
+## 大众点评 - Dianping
 <img src="https://lh3.googleusercontent.com/cA-H0TUy1TuRC4ftjg7mDhVCcuLjpU5L3cKO3lZRmNdvsyRctQRyWE7ye8n35SnrTIqc=s360-rw" width="100">
 
 [App Store](https://itunes.apple.com/us/app/id351091731?mt=8) / [Play Store](https://play.google.com/store/apps/details?id=com.dianping.v1)
