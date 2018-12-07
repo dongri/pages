@@ -61,7 +61,7 @@ WeChat　PayはカスタマURLスキーム形式になってるAlipayのよう�
 </script>
 ```
 
-<img src="https://hackerth.com/qrcode/direct/weixin-alipay.png" width="200px;"><br>
+<img src="https://hackerth.com/qrcode/direct/weixin-alipay.png" style="border-radius: 10px;" width="300px;"><br>
 このQRコードで確認できます。（間違って送金しないように）
 
 # 中間レイヤー作って各プラットフォームのAPIで実装する方法
