@@ -97,8 +97,9 @@ https://pay.weixin.qq.com/wiki/doc/api/index.html
 Alipay<br>
 https://open.alipay.com/developmentDocument.htm
 
-## つぶやき
-<blockquote class="twitter-tweet" data-lang="en"><p lang="ja" dir="ltr">店舗の一つQRコードで日本のすべてのQRコード決済プライヤーを対応する未来を考えてみた。前提は各プライヤーがAPIを公開すること。もう少し時間かかりだな</p>&mdash; D (@dongrify) <a href="https://twitter.com/dongrify/status/1070678094824894464?ref_src=twsrc%5Etfw">December 6, 2018</a></blockquote>
+## 酒飲んでつぶやいてた
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="ja" dir="ltr">店舗で一つのQRコードで日本のすべてのQRコード決済プライヤーを対応する未来を考えてみた。前提は各プライヤーがAPIを公開すること。もう少し時間かかりだな</p>&mdash; D (@dongrify) <a href="https://twitter.com/dongrify/status/1070678094824894464?ref_src=twsrc%5Etfw">December 6, 2018</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="ja" dir="ltr">中国で出来てるのはWeChat PayとAlipay, MeituanなどがAPIを公開してるから <a href="https://t.co/XdjtrPHM1k">https://t.co/XdjtrPHM1k</a></p>&mdash; D (@dongrify) <a href="https://twitter.com/dongrify/status/1070678374928965632?ref_src=twsrc%5Etfw">December 6, 2018</a></blockquote>
@@ -109,4 +110,3 @@ https://open.alipay.com/developmentDocument.htm
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="ja" dir="ltr">そこでセキュリティリスクがあるのでAPIを公開しないプレイヤーも絶対いると思うけど、そこはビジョンの違いだな</p>&mdash; D (@dongrify) <a href="https://twitter.com/dongrify/status/1070680462744465408?ref_src=twsrc%5Etfw">December 6, 2018</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
