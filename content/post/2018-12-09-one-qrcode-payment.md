@@ -1,20 +1,20 @@
 +++
-title = "QRコード一つでWeChat Pay, Alipay対応"
+title = "一つのQRコードでWeChat Pay, Alipayに対応"
 date = 2018-12-08T10:55:01+09:00
 tags = ['qrcode', 'weixin', 'alipay']
 +++
 
-先週会社のオフサイトで中国の上海に行って来ました。
+先週会社のオフサイトで中国上海に行って来ました。
 
 "QRコード決済先進国、中国・上海にて、どのようにQRコード決済が人々の生活の一部になっているのかを実際に「見る」、「体験する」ことが醍醐味です。" らしいです。
 
-QRコードで決済する以外にもofo,mobikeでQRコードで鍵を解除できたら、QRコードで自販機でジュース買えたりなどなど。
+QRコードで決済する以外にもofo,mobike QRコードで鍵を解除できたら、QRコードで自販機のジュース買えたりなどなど。
 
-そこでみんなが気になってたQRコード一つでWeChat Pay, Alipayどっちも決済できる仕組みです。どのアプリからスキャンしても正しく認識して決済画面に遷移させるQRコードのことです。
+そこでみんなが気になってたのが、店頭に置いてある一つのQRコードでWeChat Pay, Alipayどっちも決済できることでした。どのアプリからスキャンしても正しく認識して決済画面に遷移させるQRコードのことです。その辺の仕組み調べたので共有しようと思います。
 
 ## アプリの判別
-WeChatからスキャンされたか、Alipayからスキャンされたかは皆さんもよく知ってるuser agentで判別します。
-下の図がAlipayとWeChatからスキャンされたときのuser agentです。
+WeChatからスキャンされたか、AlipayからスキャンされたかはUser Agentで判別します。
+下の図がAlipayとWeChatからスキャンされたときのUser Agentです。
 
 <img src="/images/post/2018-12-09/alipay-useragent.png" width="400px;">
 <img src="/images/post/2018-12-09/weixin-useragent.png" width="400px;">
@@ -37,13 +37,13 @@ AlipayのQRコードはURL形式になっていて、アプリ判別したら用
 ```
 
 ## WeChat Pay
-WeChat PayはカスタマURLスキーム形式になってるAlipayのようにリダイレクトさせてもアプリが認識してくれません。
+WeChat PayはカスタマURLスキーム形式になっていて、Alipayのようにリダイレクトさせてもアプリが認識してくれませんでした。
 
 ```
 例: wxp://f2f067yve_yNrmWOKjAmyEeuYcStPZXhjpud
 ```
 
-スマートな方法ではないですが、WeChat Payのオリジナル送金QRコードを表示させて、ユーザーにそれを長押しして「画像内のQRコードをスキャンする」でアプリに認識させる方法があります。
+スマートな方法ではないですが、WeChat Payのオリジナル「お金を受け取るQRコード」を表示させて、ユーザーがそれを長押しして「画像内のQRコードをスキャンする」でアプリに認識させる方法があります。
 
 <img src="/images/post/2018-12-09/weixin-click.png" width="300px;">
 <img src="/images/post/2018-12-09/weixin-input.png" width="300px;">
@@ -63,20 +63,20 @@ WeChat PayはカスタマURLスキーム形式になってるAlipayのように�
   } else if (navigator.userAgent.match(/MicroMessenger\//i)) {
     document.getElementById("weixin").style.display = 'block';
   } else {
-    alert("Only Support Weixin Pay and Alipay");
+    alert("Only Support WeChat Pay and Alipay");
   }
 </script>
 ```
 
 <img src="https://hackerth.com/qrcode/direct/weixin-alipay.png" style="border-radius: 10px;" width="300px;"><br>
-このQRコードでをWeChatとAlipayどれからスキャンしても相手に送金する画面に遷移します。（間違って送金しないように）
+このQRコードをWeChatとAlipayどれからスキャンしても相手に送金する画面に遷移します。（間違って送金しないように）
 
 ## 各プラットフォームのAPIを使う方法
-上の方法はアプリの送金画面にリダイレクトする方法で、WeChatの場合はあんまりスマートではないです。そこで現れたのが「收钱吧」みたいなサービスです。
+上の方法はアプリの送金画面にリダイレクトさせる方法で、WeChatの場合はあんまりスマートではないです。そこで現れたのが「收钱吧」みたいなサービスです。
 
 https://shouqianba.com/pay-code.html
 
-彼らの仕組みは店舗情報を登録させて、WeChat、Alipayの情報とあわせてプラットフォームのAPIを使って決済できるようにしてます。各アプリの送金画面に直接遷移させるのではなく、QRコードスキャンすると彼らのページに飛んで金額入力画面を表示させて、API経由でWeChat, Alipayと決済します。User Agentで判別するんでしょうね
+彼らの仕組みは店舗情報を登録させて、WeChat、Alipayの情報とあわせてプラットフォームのAPIを使って決済できるようにしてます。各アプリの送金画面に直接遷移させるのではなく、QRコードスキャンすると彼らのページに飛んで金額入力画面を表示させて、API経由でWeChat, Alipayと決済します。どのAPIと通信するかはUser Agentで判別するんでしょうね
 
 <img src="/images/post/2018-12-09/shouqianba.png" width="500px;" style="border: 1px solid #aaa;">
 
@@ -85,11 +85,11 @@ https://shouqianba.com/pay-code.html
 https://qr.shouqianba.com/18010900256037830890
 ```
 
-#### WeChat Pay
+#### WeChatでスキャン
 <img src="/images/post/2018-12-09/weixin-payment-1.png" width="300px;" style="border: 1px solid #aaa;">
 <img src="/images/post/2018-12-09/weixin-payment-2.png" width="300px;" style="border: 1px solid #aaa;">
 
-#### Alipay
+#### Alipayでスキャン
 <img src="/images/post/2018-12-09/alipay-payment-1.png" width="300px;" style="border: 1px solid #aaa;">
 <img src="/images/post/2018-12-09/alipay-payment-2.png" width="300px;" style="border: 1px solid #aaa;">
 
@@ -102,7 +102,7 @@ https://pay.weixin.qq.com/wiki/doc/api/index.html
 Alipay<br>
 https://open.alipay.com/developmentDocument.htm
 
-## 少し前に酒飲んでつぶやいてた
+## 酒飲んでつぶやいてた
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="ja" dir="ltr">EMVcoのような団体が決済用QRコードの標準を普及するよりプレイヤーがAPI公開して、みんな（自販機業者など）が実装したほうが速い気がする <a href="https://t.co/FTgEHax5nf">https://t.co/FTgEHax5nf</a></p>&mdash; D (@dongrify) <a href="https://twitter.com/dongrify/status/1070679301270302720?ref_src=twsrc%5Etfw">December 6, 2018</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -110,3 +110,4 @@ https://open.alipay.com/developmentDocument.htm
 <blockquote class="twitter-tweet" data-lang="en"><p lang="ja" dir="ltr">そこでセキュリティリスクがあるのでAPIを公開しないプレイヤーも絶対いると思うけど、そこはビジョンの違いだな</p>&mdash; D (@dongrify) <a href="https://twitter.com/dongrify/status/1070680462744465408?ref_src=twsrc%5Etfw">December 6, 2018</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
+日本のQRコード決済プレイヤーも早くAPIを公開してほしいです。
