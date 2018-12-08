@@ -43,7 +43,10 @@ WeChat PayはカスタマURLスキーム形式になってるAlipayのように�
 例: wxp://f2f067yve_yNrmWOKjAmyEeuYcStPZXhjpud
 ```
 
-スマートな方法ではないですが、WeChat Payのオリジナル送金QRコードを表示されて、ユーザーにそれを長押ししてアプリに認識させる方法があります。
+スマートな方法ではないですが、WeChat Payのオリジナル送金QRコードを表示させて、ユーザーにそれを長押しして「画像内のQRコードをスキャンする」でアプリに認識させる方法があります。
+
+<img src="/images/post/2018-12-09/weixin-click.png" width="300px;">
+<img src="/images/post/2018-12-09/weixin-input.png" width="300px;">
 
 ## 実装
 簡単な例ですが、こんな感じになります。ここの `weixin.png` を自分のオリジナルQRコードの画像に置き換えてください。
@@ -90,23 +93,20 @@ https://qr.shouqianba.com/18010900256037830890
 <img src="/images/post/2018-12-09/alipay-payment-1.png" width="300px;" style="border: 1px solid #aaa;">
 <img src="/images/post/2018-12-09/alipay-payment-2.png" width="300px;" style="border: 1px solid #aaa;">
 
-## APIドキュメント
+アプリに合わせて共通のページを作ってるので、UIなどが統一されてます。
+
+## WeChat, Alipay APIドキュメント
 WeChat Pay<br>
 https://pay.weixin.qq.com/wiki/doc/api/index.html
 
 Alipay<br>
 https://open.alipay.com/developmentDocument.htm
 
-## 酒飲んでつぶやいてた
-
-<blockquote class="twitter-tweet" data-lang="en"><p lang="ja" dir="ltr">店舗で一つのQRコードで日本のすべてのQRコード決済プライヤーを対応する未来を考えてみた。前提は各プライヤーがAPIを公開すること。もう少し時間かかりだな</p>&mdash; D (@dongrify) <a href="https://twitter.com/dongrify/status/1070678094824894464?ref_src=twsrc%5Etfw">December 6, 2018</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-<blockquote class="twitter-tweet" data-lang="en"><p lang="ja" dir="ltr">中国で出来てるのはWeChat PayとAlipay, MeituanなどがAPIを公開してるから <a href="https://t.co/XdjtrPHM1k">https://t.co/XdjtrPHM1k</a></p>&mdash; D (@dongrify) <a href="https://twitter.com/dongrify/status/1070678374928965632?ref_src=twsrc%5Etfw">December 6, 2018</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+## 少し前に酒飲んでつぶやいてた
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="ja" dir="ltr">EMVcoのような団体が決済用QRコードの標準を普及するよりプレイヤーがAPI公開して、みんな（自販機業者など）が実装したほうが速い気がする <a href="https://t.co/FTgEHax5nf">https://t.co/FTgEHax5nf</a></p>&mdash; D (@dongrify) <a href="https://twitter.com/dongrify/status/1070679301270302720?ref_src=twsrc%5Etfw">December 6, 2018</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="ja" dir="ltr">そこでセキュリティリスクがあるのでAPIを公開しないプレイヤーも絶対いると思うけど、そこはビジョンの違いだな</p>&mdash; D (@dongrify) <a href="https://twitter.com/dongrify/status/1070680462744465408?ref_src=twsrc%5Etfw">December 6, 2018</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
