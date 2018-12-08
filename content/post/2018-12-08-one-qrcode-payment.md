@@ -1,5 +1,5 @@
 +++
-title = "一つのQRコードでWeChat Pay, Alipayに対応"
+title = "WeChat Pay, Alipay両方対応QRコード"
 date = 2018-12-08T10:55:01+09:00
 tags = ['qrcode', 'weixin', 'alipay']
 +++
@@ -10,7 +10,7 @@ tags = ['qrcode', 'weixin', 'alipay']
 
 QRコードで決済する以外にもofo,mobike QRコードで鍵を解除できたら、QRコードで自販機のジュース買えたりなどなど。
 
-そこでみんなが気になってたのが、店頭に置いてある一つのQRコードでWeChat Pay, Alipayどっちも決済できることでした。どのアプリからスキャンしても正しく認識して決済画面に遷移させるQRコードのことです。その辺の仕組み調べたので共有しようと思います。
+そこでみんなが気になってたのが、店頭に置いてある一枚のQRコードでWeChat Pay, Alipayどっちも決済できることでした。どのアプリからスキャンしても正しく認識して決済画面に遷移させるQRコードのことです。その辺の仕組み調べたので共有しようと思います。
 
 ## アプリの判別
 WeChatからスキャンされたか、AlipayからスキャンされたかはUser Agentで判別します。
@@ -93,7 +93,7 @@ https://qr.shouqianba.com/18010900256037830890
 <img src="/images/post/2018-12-08/alipay-payment-1.png" width="300px;" style="border: 1px solid #aaa;">
 <img src="/images/post/2018-12-08/alipay-payment-2.png" width="300px;" style="border: 1px solid #aaa;">
 
-アプリに合わせて共通のページを作ってるので、UIなどが統一されてます。
+アプリに合わせて共通のページを作ってるので、UIなどが統一されてます。この仕組だとWeChat Pay, AlipayだけではなくAPI公開してる決済サービスであればすべて対応可能です。
 
 ## WeChat, Alipay APIドキュメント
 WeChat Pay<br>
@@ -102,7 +102,7 @@ https://pay.weixin.qq.com/wiki/doc/api/index.html
 Alipay<br>
 https://open.alipay.com/developmentDocument.htm
 
-## 酒飲んでつぶやいてた
+## 先日酒飲んでつぶやいてた
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="ja" dir="ltr">EMVcoのような団体が決済用QRコードの標準を普及するよりプレイヤーがAPI公開して、みんな（自販機業者など）が実装したほうが速い気がする <a href="https://t.co/FTgEHax5nf">https://t.co/FTgEHax5nf</a></p>&mdash; D (@dongrify) <a href="https://twitter.com/dongrify/status/1070679301270302720?ref_src=twsrc%5Etfw">December 6, 2018</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -110,4 +110,4 @@ https://open.alipay.com/developmentDocument.htm
 <blockquote class="twitter-tweet" data-lang="en"><p lang="ja" dir="ltr">そこでセキュリティリスクがあるのでAPIを公開しないプレイヤーも絶対いると思うけど、そこはビジョンの違いだな</p>&mdash; D (@dongrify) <a href="https://twitter.com/dongrify/status/1070680462744465408?ref_src=twsrc%5Etfw">December 6, 2018</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-日本のQRコード決済プレイヤーも早くAPIを公開してほしいです。
+日本のQRコード決済プレイヤーも早くAPI公開してくれるいいな
