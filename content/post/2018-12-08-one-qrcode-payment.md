@@ -16,8 +16,8 @@ QRコードで決済する以外にもofo,mobike QRコードで鍵を解除で�
 WeChatからスキャンされたか、AlipayからスキャンされたかはUser Agentで判別します。
 下の図がAlipayとWeChatからスキャンされたときのUser Agentです。
 
-<img src="/images/post/2018-12-09/alipay-useragent.png" width="400px;">
-<img src="/images/post/2018-12-09/weixin-useragent.png" width="400px;">
+<img src="/images/post/2018-12-08/alipay-useragent.png" width="400px;">
+<img src="/images/post/2018-12-08/weixin-useragent.png" width="400px;">
 
 ```
 if (navigator.userAgent.match(/Alipay/i)) {
@@ -45,8 +45,8 @@ WeChat PayはカスタマURLスキーム形式になっていて、Alipayのよ�
 
 スマートな方法ではないですが、WeChat Payのオリジナル「お金を受け取るQRコード」を表示させて、ユーザーがそれを長押しして「画像内のQRコードをスキャンする」でアプリに認識させる方法があります。
 
-<img src="/images/post/2018-12-09/weixin-click.png" width="300px;">
-<img src="/images/post/2018-12-09/weixin-input.png" width="300px;">
+<img src="/images/post/2018-12-08/weixin-click.png" width="300px;">
+<img src="/images/post/2018-12-08/weixin-input.png" width="300px;">
 
 ## 実装
 簡単な例ですが、こんな感じになります。ここの `weixin.png` を自分のオリジナルQRコードの画像に置き換えてください。
@@ -78,7 +78,7 @@ https://shouqianba.com/pay-code.html
 
 彼らの仕組みは店舗情報を登録させて、WeChat、Alipayの情報とあわせてプラットフォームのAPIを使って決済できるようにしてます。各アプリの送金画面に直接遷移させるのではなく、QRコードスキャンすると彼らのページに飛んで金額入力画面を表示させて、API経由でWeChat, Alipayと決済します。どのAPIと通信するかはUser Agentで判別するんでしょうね
 
-<img src="/images/post/2018-12-09/shouqianba.png" width="500px;" style="border: 1px solid #aaa;">
+<img src="/images/post/2018-12-08/shouqianba.png" width="500px;" style="border: 1px solid #aaa;">
 
 上のQRコードはこんなURLになってます。
 ```
@@ -86,12 +86,12 @@ https://qr.shouqianba.com/18010900256037830890
 ```
 
 #### WeChatでスキャン
-<img src="/images/post/2018-12-09/weixin-payment-1.png" width="300px;" style="border: 1px solid #aaa;">
-<img src="/images/post/2018-12-09/weixin-payment-2.png" width="300px;" style="border: 1px solid #aaa;">
+<img src="/images/post/2018-12-08/weixin-payment-1.png" width="300px;" style="border: 1px solid #aaa;">
+<img src="/images/post/2018-12-08/weixin-payment-2.png" width="300px;" style="border: 1px solid #aaa;">
 
 #### Alipayでスキャン
-<img src="/images/post/2018-12-09/alipay-payment-1.png" width="300px;" style="border: 1px solid #aaa;">
-<img src="/images/post/2018-12-09/alipay-payment-2.png" width="300px;" style="border: 1px solid #aaa;">
+<img src="/images/post/2018-12-08/alipay-payment-1.png" width="300px;" style="border: 1px solid #aaa;">
+<img src="/images/post/2018-12-08/alipay-payment-2.png" width="300px;" style="border: 1px solid #aaa;">
 
 アプリに合わせて共通のページを作ってるので、UIなどが統一されてます。
 
