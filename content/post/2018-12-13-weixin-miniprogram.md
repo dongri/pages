@@ -14,13 +14,13 @@ https://developers.weixin.qq.com/miniprogram/dev/index.html
 
 勉強も含めてミニプログラム作ってみました。
 
-<img src="/images/post/2018-12-13/weixin-miniprogram.png" width="300px" style="border: 1px solid #ccc;">
+<img src="/images/post/2018-12-13/weixin-miniprogram.png" width="300px" style="border: 1px solid #eee;">
 
 今日は何を食おうかを登録済みのリストからランダムに表示させて選ばせるシンプルなアプリです。
 
 WeChatでスキャンして確認できます。
 
-<img src="/images/post/2018-12-13/qrcode.jpg" width="300px" style="border: 1px solid #ccc;">
+<img src="/images/post/2018-12-13/qrcode.jpg" width="300px" style="border: 1px solid #eee;">
 
 ソースコードはこちらにあります。
 
