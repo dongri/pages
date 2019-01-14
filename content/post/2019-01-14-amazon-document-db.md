@@ -1,10 +1,10 @@
 +++
-title = "AWS DocumentDBを試してみた"
+title = "Amazon DocumentDBを試してみた"
 date = 2019-01-14T21:42:00+09:00
-tags = ['aws', 'documentdb', 'mongri']
+tags = ['amazon', 'aws', 'documentdb', 'mongri']
 +++
 
-AWSからMongoDBと互換性を持つDocumentDBをリリースしたと言ってるので試してみた。
+AmazonからMongoDBと互換性を持つDocumentDBをリリースしたと言ってるので試してみた。
 クラスタを作成するためにVPCが必要だったのでVPCを一つ作成。VPCの他にアベイラビリティゾーン２つ必要なので、違うアベイラビリティゾーンを持つサブネット２つ作成。これでクラスタ作成できる。
 
 インスタンスタイプは最低でもdb.r4.largeで15.25GBのメモリ。値段は$0.277
