@@ -41,6 +41,17 @@ users
 https://github.com/dongri/mongri
 
 ```
+$ vim config/mongo.json
+
+  "docdb": {
+    "uri": "mongodb://{user}:{password}@localhost:27017/{docdb-2019-01-14-13-34-21}",
+    "opts": {
+      "poolSize": 20,
+      "useNewUrlParser": true,
+      "ssl": true
+    }
+  },
+
 $ NODE_ENV=docdb node app.js
 ```
 
