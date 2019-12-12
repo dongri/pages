@@ -1,5 +1,5 @@
 +++
-title = "I love Netskope"
+title = "I Love Netskope"
 date = 2019-12-12T00:00:00+09:00
 tags = ['netskope', 'developer']
 +++
@@ -53,3 +53,5 @@ $ curl ipconfig.io
 $ netskope resume
 $ curl ipconfig.io
 ```
+
+以上！開発者達の仕事が捗ると何よりです！
