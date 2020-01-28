@@ -9,7 +9,7 @@ tags = ['netskope', 'developer']
 Netskope大好きでちょっと便利なコマンド書いてみた。
 
 ### 永遠にさようなら
-```sh
+```
 $ vim goodbye.sh
 
 #!/bin/sh
