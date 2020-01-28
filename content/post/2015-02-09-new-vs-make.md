@@ -9,7 +9,7 @@ tags = ["golang"]
 
 [http://golang.org/pkg/builtin/#new](http://golang.org/pkg/builtin/#new)
 
-```go
+```
 func new(Type) *Type
 ```
 
@@ -20,7 +20,7 @@ func new(Type) *Type
 
 [http://golang.org/pkg/builtin/#make](http://golang.org/pkg/builtin/#make)
 
-```go
+```
 func make(Type, size IntegerType) Type
 ```
 
@@ -31,7 +31,7 @@ func make(Type, size IntegerType) Type
 ### まとめ
 * new の役割はポインタの処理機か(*T)。make の役割は slice, map, chan 初期化かつ引用を戻す(T)。
 
-```go
+```
 package main
 
 import "fmt"

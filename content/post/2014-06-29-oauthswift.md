@@ -14,7 +14,7 @@ Github : [https://github.com/dongri/OAuthSwift](https://github.com/dongri/OAuthS
 
 使用例：
 
-```ruby
+```
 // OAuth1.0
 let oauthswift = OAuth1Swift(
     consumerKey:    "********",

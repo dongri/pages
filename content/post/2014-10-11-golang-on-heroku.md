@@ -27,7 +27,7 @@ $ cd osakago
 $ vim server.go
 ```
 
-```go
+```
 package main
 
 import (

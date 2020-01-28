@@ -13,7 +13,7 @@ Dockerfile、ソースコードなどはこちら
 はじめはalpineで頑張ってみようかと思ったがrustのインストールがうまく行かなくて、ubuntuに変更。
 Dockerfileは以下のようになっている。
 
-```Dockerfile
+```
 FROM ubuntu:latest
 
 # rust, cargo buildに必要なソフトウェアインストール

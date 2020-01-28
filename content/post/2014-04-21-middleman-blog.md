@@ -30,7 +30,7 @@ $ git remote add origin git@github.com:dongri/dongri.github.io.git
 
 ## Gemfile を修正
 
-```ruby
+```
 gem "middleman-deploy"
 gem "middleman-livereload"
 gem "middleman-syntax"
@@ -42,7 +42,7 @@ gem "nokogiri"
 
 ## config.rb を設定
 
-```ruby
+```
 Time.zone = "Tokyo"
 
 page "archives/*", layout: :post

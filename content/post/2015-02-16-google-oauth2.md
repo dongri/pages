@@ -29,7 +29,7 @@ scopeは https://www.googleapis.com/auth/calendar.readonly など
 
 GETで上のURLを叩く。認証画面が開き、承認すると、指定したcallback_urlにcodeが返ってくる。
 
-```bash
+```
 {callback_url}?code=4/W30HqfsDKmamqdW*****************
 ```
 

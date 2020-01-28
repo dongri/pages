@@ -24,7 +24,7 @@ https://www.google.com/android/uncertified/
 
 Android IDはどう取得するのか？上のページでは adb コマンドで取得すると書いてあるが、そもそもRoot取ってないのでこの方法だとだめで、違う方法でAndroid IDを取得しないといけない。
 
-```java
+```
 String androidId = Settings.Secure.getString(getContext().getContentResolver(), Settings.Secure.ANDROID_ID);
 System.out.println(androidId);
 ```
