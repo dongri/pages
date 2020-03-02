@@ -1,5 +1,5 @@
 ---
-title: "Elixir触って一ヶ月"
+title: "Elixir 触って一ヶ月"
 date: 2020-03-02T18:42:14+09:00
 draft: false
 tags: ['elixir', 'phoenix']
