@@ -1,8 +1,8 @@
 ---
-title: "ソーシャルアカウントでETH送金システム作ってみた"
+title: "SNSアカウントを使ったETH送金システム"
 date: 2020-05-31T00:42:14+09:00
 draft: false
-tags: ['crypto', 'ethereum', 'ETH']
+tags: ['crypto', 'ethereum', 'ETH', 'twitter', 'gthub']
 ---
 
 プライベートプロジェクトで [cryptotako.com](https://cryptotako.com) というサービスを開発しました。
