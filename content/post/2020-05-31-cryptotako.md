@@ -14,7 +14,7 @@ tags: ['crypto', 'ethereum', 'ETH']
 * Twitter, GitHubなどのソーシャルネットワークアカウントでログイン
 * Metamask, Dapperなどのウォレットからログイン
 * Twitter, GitHub, ETH Addressを選択して送金
-* Tiwtter, GitHub上での通知
+* Twttter, GitHub上での通知
 * トランザクション履歴
 * Twitter, GitHubアカウント連携でアドレス生成
 * 秘密鍵エクスポート
