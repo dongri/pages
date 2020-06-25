@@ -1,5 +1,5 @@
 +++
-title = "さようなら「どんPay」, さようならOrigami"
+title = "さようなら「どんPay」 さようならOrigami"
 date = 2020-06-30T15:20:49+09:00
 tags = ['Pay', 'どんPay']
 +++
