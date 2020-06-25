@@ -1,6 +1,6 @@
 {{ partial "header.html" . }}
 		<main id="content">
-{{ $paginator := .Paginator }}
+{{ $paginator := (.Paginator 16) }}
 
     {{ range $index, $page := .Paginator.Pages }}
         {{ .Render "li" }}
