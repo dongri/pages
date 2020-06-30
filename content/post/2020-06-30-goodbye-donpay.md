@@ -1,7 +1,7 @@
 +++
 title = "さようなら「どんPay」 さようならOrigami"
 date = 2020-06-30T09:15:49+09:00
-tags = ['Pay', 'どんPay']
+tags = ['Pay', 'どんPay', 'Origami']
 +++
 
 2018年Pay乱立した時期に作った「どんPay」ですが、今日PlayStoreから削除します。
