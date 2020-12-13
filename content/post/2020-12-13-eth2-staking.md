@@ -1,5 +1,5 @@
 +++
-title = "ETH2 Staking (ETH2 ステーキング)"
+title = "ETH2 Staking"
 date = 2020-12-13T09:46:43+09:00
 tags = ['ethereum', 'eth2', 'staking', 'prysm']
 +++
