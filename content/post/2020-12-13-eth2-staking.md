@@ -77,4 +77,4 @@ $ nohup ./prysm.sh validator --wallet-password-file=$HOME/.eth2validators/prysm-
 ```
 (password.txt にはアカウントインポートした時のパスワードをplain textで記載します)
 
-以上で、ETH2ステーキングに参加できました。Activeになるには時間かかるそうなので、ゆっくり待ちます。
+以上で、ETH2ステーキングに参加できました。
