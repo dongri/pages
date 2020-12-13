@@ -57,7 +57,7 @@ $ ./prysm.sh beacon-chain --http-web3provider=https://mainnet.infura.io/v3/****
 ```
 $ ./prysm.sh validator accounts import --keys-dir=$HOME/prysm/validator_keys
 ```
-validator_keysディレクトリはデポジットした後取得したvalidator_keysになります。中に `deposit_data_***.json` と `keystore-m_***.json` ありますが、`deposit_data_***.json` だけあれば大丈夫そうです。
+validator_keysディレクトリはデポジットした後取得したvalidator_keysになります。
 
 ### Run validator
 ```
