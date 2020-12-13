@@ -73,7 +73,7 @@ nohupでEC2ターミナル閉じても、ログアウトして実行されるよ
 ```
 $ nohup ./prysm.sh beacon-chain --http-web3provider=https://mainnet.infura.io/v3/****** 2>> ./log/beacon-chain.log &
 
-$ nohup ./prysm.sh validator --wallet-password-file=$HOME/.eth2validators/prysm-wallet-v2/password.txt 2>> ./log/validator.log &
+$ nohup ./prysm.sh validator --wallet-password-file $HOME/.eth2validators/prysm-wallet-v2/password.txt 2>> ./log/validator.log &
 ```
 (password.txt にはアカウントインポートした時のパスワードをplain textで記載します)
 
