@@ -8,6 +8,10 @@ $ cd hugo
 $ go install
 ```
 
+# New Post
+```
+$ hugo new content/post/2021-05-02-NFT.md
+```
 # Start Local server
 ```
 $ hugo serve
