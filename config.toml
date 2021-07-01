@@ -1,6 +1,6 @@
 baseurl = "https://dongri.github.io/"
 languageCode = "en-us"
-title = "D"
+title = ""
 # theme = "crisp"
 # theme = "pixyll"
 theme = "boro"
