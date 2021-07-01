@@ -6,6 +6,6 @@ title = "D"
 theme = "boro"
 
 [params]
-  message = "hello world"
+  message = "Hello World"
 [permalinks]
   post = "/:year/:month/:title/"
