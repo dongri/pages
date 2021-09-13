@@ -87,7 +87,8 @@ a {
 	/*font-weight:700;*/
 	text-decoration:none;
 	/*color: #5cc265;*/
-	color: #07c;
+	/* color: #07c; */
+	color: #999;
 }
 a:hover {
 	text-decoration:underline;
