@@ -114,7 +114,7 @@ Amazon Elastic Block Storage (EBS) の料金 (monthly): 100.00 USD
 合計月額コスト: 183.95 USD
 ```
 [https://www.coingecko.com/en/coins/arweave](https://www.coingecko.com/en/coins/arweave)  
-2021年10月11日時点で¥7,066
+2021年10月11日時点で¥6,849
 
 マイニング報酬は一ヶ月後にご報告します。
 
