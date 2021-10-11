@@ -88,7 +88,7 @@ a {
 	text-decoration:none;
 	/*color: #5cc265;*/
 	/* color: #07c; */
-	color: #999;
+	color: #666;
 }
 a:hover {
 	text-decoration:underline;
@@ -102,7 +102,7 @@ strong {
 blockquote {
 	border-left: 0.4em solid #eee;
 	padding-left: 1.2em;
-	font-size: 1.3em;
+	font-size: 1em;
 }
 hr{
  	border: 0;
