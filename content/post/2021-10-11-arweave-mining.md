@@ -62,7 +62,7 @@ $ mv * arweave-2.4.4.0
 ### 4. start
 ```
 $ cd arweave-2.4.4.0
-./bin/start mine mining_addr YOUR-MINING-ADDRESS peer 188.166.200.45 peer 188.166.192.169 peer 163.47.11.64 peer 139.59.51.59 peer 138.197.232.192
+$ ./bin/start mine mining_addr YOUR-MINING-ADDRESS peer 188.166.200.45 peer 188.166.192.169 peer 163.47.11.64 peer 139.59.51.59 peer 138.197.232.192
 ```
 `YOUR-MINING-ADDRESS` のところにChrome Extensionで生成したWalletのアドレスを入れます。
 
@@ -73,6 +73,12 @@ error while loading shared libraries: libtinfo.so.5: cannot open shared object f
 $ sudo apt update
 $ sudo apt upgrade
 $ sudo apt install libncurses5
+```
+
+#### Daemon化
+nohupでEC2ターミナル閉じても、ログアウトして実行されるようにします。
+```
+$ onhup ./bin/start mine mining_addr YOUR-MINING-ADDRESS peer 188.166.200.45 peer 188.166.192.169 peer 163.47.11.64 peer 139.59.51.59 peer 138.197.232.192 2>> ./log/mining.log &
 ```
 
 ### 5. logs
