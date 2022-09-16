@@ -78,3 +78,12 @@ $ nohup ./prysm.sh validator --wallet-password-file $HOME/.eth2validators/prysm-
 (password.txt にはアカウントインポートした時のパスワードをplain textで記載します)
 
 以上で、ETH2ステーキングに参加できました。
+
+### The Merge
+マージ後infuraのエンドポイントでエラーが出るようになったので、ETH2で新しいエンドポイントを使うようにした。
+```
+$ cd prysm
+$ nohup ./prysm.sh beacon-chain --execution-endpoint=https://xxx:xxxx@eth2-beacon-mainnet.infura.io --suggested-fee-recipient=0x9D7Fa65552609eDF74417485D80613da5eC09Fe5 2>> ./log/beacon-chain.log &
+
+$ nohup ./prysm.sh validator --wallet-password-file=$HOME/.eth2validators/prysm-wallet-v2/password.txt 2>> ./log/validator.log &
+```
