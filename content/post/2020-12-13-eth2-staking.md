@@ -80,10 +80,46 @@ $ nohup ./prysm.sh validator --wallet-password-file $HOME/.eth2validators/prysm-
 以上で、ETH2ステーキングに参加できました。
 
 ### The Merge
-マージ後infuraのエンドポイントでエラーが出るようになったので、ETH2で新しいエンドポイントを使うようにした。
+マージ後はinfura, alchemyなどのプロバイダーが使えなくなった
+https://docs.prylabs.network/docs/prepare-for-merge#the-merge-before-and-now
+
+自前でnodeクライアントを建てる、SSDは2TBに変更
+```
+$ go install github.com/ethereum/go-ethereum/cmd/geth
+
+$ geth version
+Geth
+Version: 1.11.0-unstable
+Architecture: amd64
+Go Version: go1.18.3
+Operating System: linux
+GOPATH=
+GOROOT=/usr/lib/golang
+$ 
+```
+
+Geth
 ```
 $ cd prysm
-$ nohup ./prysm.sh beacon-chain --execution-endpoint=https://xxx:xxxx@eth2-beacon-mainnet.infura.io --suggested-fee-recipient=0x9D7Fa65552609eDF74417485D80613da5eC09Fe5 2>> ./log/beacon-chain.log &
 
-$ nohup ./prysm.sh validator --wallet-password-file=$HOME/.eth2validators/prysm-wallet-v2/password.txt 2>> ./log/validator.log &
+$ ./prysm.sh beacon-chain generate-auth-secret
+
+$ vim run-geth.sh
+#!/bin/sh
+nohup geth --http --http.api eth,net,engine,admin --authrpc.jwtsecret $HOME/prysm/jwt.hex 2>> ./log/geth.log &
+
+$ ./run-geth.sh
+```
+
+prysm
+```
+$ cd prysm
+
+$ vim run-prysm.sh
+#!/bin/sh
+nohup ./prysm.sh beacon-chain --execution-endpoint=http://localhost:8551 --jwt-secret=$HOME/prysm/jwt.hex --suggested-fee-recipient=0x9D7Fa65552609eDF74417485D80613da5eC09Fe5 2>> ./log/beacon-chain.log &
+
+nohup ./prysm.sh validator --wallet-password-file=$HOME/prysm/password.txt 2>> ./log/validator.log &
+
+$ ./run-prysm.sh
 ```
