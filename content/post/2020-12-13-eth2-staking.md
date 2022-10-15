@@ -80,7 +80,7 @@ $ nohup ./prysm.sh validator --wallet-password-file $HOME/.eth2validators/prysm-
 以上で、ETH2ステーキングに参加できました。
 
 ### The Merge
-マージ後はinfura, alchemyなどのプロバイダーが使えなくなった
+マージ後はinfura, alchemyなどのプロバイダーが使えなくなった  
 https://docs.prylabs.network/docs/prepare-for-merge#the-merge-before-and-now
 
 自前でnodeクライアントを建てる、SSDは2TBに変更
