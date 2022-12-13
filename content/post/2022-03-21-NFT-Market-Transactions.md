@@ -54,3 +54,4 @@ https://polygonscan.com/address/0xf52c52b399101669c3b8bcbd0db0a55395995acb
 ![image](/images/post/2022-03-21/sbinft-polygon.png)
 
 ※ マーケットのコントラクトアドレスが違ったら指摘お願いします。
+
