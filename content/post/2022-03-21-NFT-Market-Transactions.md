@@ -53,6 +53,7 @@ https://etherscan.io/address/0x2580bcfee471807f75314baac8facb7f63d5b761
 https://polygonscan.com/address/0xf52c52b399101669c3b8bcbd0db0a55395995acb
 ![image](/images/post/2022-03-21/sbinft-polygon.png)
 
+[2022年12月21日追加]
 # tofuNFT
 ### Ethereum
 https://etherscan.io/address/0x7bc8b1b5aba4df3be9f9a32dae501214dc0e4f3f
