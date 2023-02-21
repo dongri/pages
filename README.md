@@ -22,7 +22,7 @@ $ open http://localhost:1313/
 # Public
 ```
 $ cd public
-$ git pull origin master
+$ git pull origin main
 ```
 
 # Deploy

@@ -16,7 +16,7 @@ $ git clone https://github.com/certbot/certbot.git
 ## ワイルドカード証明書の取得
 ```
 $ ./certbot-auto certonly --manual \
--d *.hackerth.com -d hackerth.com \
+-d *.nilth.com -d nilth.com \
 -m dongrify@gmail.com \
 --agree-tos \
 --manual-public-ip-logging-ok \
@@ -24,7 +24,7 @@ $ ./certbot-auto certonly --manual \
 --server https://acme-v02.api.letsencrypt.org/directory
 ```
 
-* -d *.hackerth.com -d hackerth.com: ワイルドカード証明書とサブドメイン無しの証明書も含めて取得
+* -d *.nilth.com -d nilth.com: ワイルドカード証明書とサブドメイン無しの証明書も含めて取得
 
 * -m sample@example.com: 指定したメールアドレスとに証明書更新の通知を受け取る
 
@@ -54,11 +54,11 @@ our work to encrypt the web, protect its users and defend digital rights.
 (Y)es/(N)o: Y ← 入力
 Obtaining a new certificate
 Performing the following challenges:
-dns-01 challenge for hackerth.com
+dns-01 challenge for nilth.com
 
 -------------------------------------------------------------------------------
 Please deploy a DNS TXT record under the name
-_acme-challenge.hackerth.com with the following value:
+_acme-challenge.nilth.com with the following value:
 
 T32vZj4xmZ12QR_kMblVS31p2Czjb7HT-UQyelDPcYE
 
@@ -80,9 +80,9 @@ txt _acme-challenge T32vZj4xmZ12QR_kMblVS31p2Czjb7HT-UQyelDPcYE
 反映されるかどうかは以下のコマンドで確認。
 
 ```
-$ dig -t txt hackerth.com
-$ host -t txt hackerth.com
-$ dig _acme-challenge.hackerth.com any @8.8.8.8
+$ dig -t txt nilth.com
+$ host -t txt nilth.com
+$ dig _acme-challenge.nilth.com any @8.8.8.8
 ```
 
 反映されたらEnterを押して完了させる。
@@ -90,9 +90,9 @@ $ dig _acme-challenge.hackerth.com any @8.8.8.8
 ```
 IMPORTANT NOTES:
  - Congratulations! Your certificate and chain have been saved at:
-   /etc/letsencrypt/live/hackerth.com/fullchain.pem
+   /etc/letsencrypt/live/nilth.com/fullchain.pem
    Your key file has been saved at:
-   /etc/letsencrypt/live/hackerth.com/privkey.pem
+   /etc/letsencrypt/live/nilth.com/privkey.pem
    Your cert will expire on 2018-06-21. To obtain a new or tweaked
    version of this certificate in the future, simply run certbot-auto
    again. To non-interactively renew *all* of your certificates, run
@@ -105,13 +105,13 @@ IMPORTANT NOTES:
 
 ## Nginx設定
 
-https://hackerth.com
+https://nilth.com
 
 ```
 server {
     listen 80;
-    server_name hackerth.com;
-    root /usr/share/nginx/html/hackerth.com;
+    server_name nilth.com;
+    root /usr/share/nginx/html/nilth.com;
     location / {
         return 301 https://$server_name$request_uri;
     }
@@ -119,24 +119,24 @@ server {
 
 server {
     listen 443 ssl;
-    server_name hackerth.com;
-    ssl_certificate /etc/letsencrypt/live/hackerth.com/fullchain.pem;
-    ssl_certificate_key /etc/letsencrypt/live/hackerth.com/privkey.pem;
+    server_name nilth.com;
+    ssl_certificate /etc/letsencrypt/live/nilth.com/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/nilth.com/privkey.pem;
     ssl_session_tickets on;
     ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
     ssl_ciphers AESGCM:HIGH:!aNULL:!MD5;
     ssl_prefer_server_ciphers on;
-    root /usr/share/nginx/html/hackerth.com;
+    root /usr/share/nginx/html/nilth.com;
 }
 ```
 
-https://girl.hackerth.com
+https://girl.nilth.com
 
 ```
 server {
     listen 80;
-    server_name girl.hackerth.com;
-    root /usr/share/nginx/html/hackerth.com/girl;
+    server_name girl.nilth.com;
+    root /usr/share/nginx/html/nilth.com/girl;
     location / {
         return 301 https://$server_name$request_uri;
     }
@@ -144,14 +144,14 @@ server {
 
 server {
     listen 443 ssl;
-    server_name girl.hackerth.com;
-    ssl_certificate /etc/letsencrypt/live/hackerth.com/fullchain.pem;
-    ssl_certificate_key /etc/letsencrypt/live/hackerth.com/privkey.pem;
+    server_name girl.nilth.com;
+    ssl_certificate /etc/letsencrypt/live/nilth.com/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/nilth.com/privkey.pem;
     ssl_session_tickets on;
     ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
     ssl_ciphers AESGCM:HIGH:!aNULL:!MD5;
     ssl_prefer_server_ciphers on;
-    root /usr/share/nginx/html/hackerth.com/girl;
+    root /usr/share/nginx/html/nilth.com/girl;
 }
 ```
 
@@ -173,7 +173,7 @@ The error was: PluginError('An authentication script must be provided with --man
 こんなエラーで更新出来なかった。
 ```
 $ ./certbot-auto certonly --manual \
--d *.hackerth.com -d hackerth.com \
+-d *.nilth.com -d nilth.com \
 -m dongrify@gmail.com \
 --agree-tos \
 --manual-public-ip-logging-ok \

@@ -2,7 +2,7 @@
 
 echo -e "Deploying updates to GitHub..."
 
-git pull origin master
+git pull origin main
 
 # Build the project.
 hugo
@@ -18,11 +18,11 @@ fi
 git commit -m "$msg"
 
 # Push source and build repos.
-git push -f origin master
-# git subtree push --prefix=public git@github.com:dongri/dongri.github.io.git master
+git push -f origin main
+# git subtree push --prefix=public git@github.com:dongri/dongri.github.io.git main
 
 # force push
-#git push git@github.com:dongri/dongri.github.io.git `git subtree split --prefix public master`:master --force
+#git push git@github.com:dongri/dongri.github.io.git `git subtree split --prefix public main`:main --force
 
 # New Deploy
 cd public
@@ -36,4 +36,4 @@ if [ $# -eq 1 ]
   then msg="$1"
 fi
 git commit -m "$msg"
-git push -f origin master
+git push -f origin main

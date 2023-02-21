@@ -6,7 +6,7 @@ tags = ["Blog", "LINE", "BOT"]
 
 LINE BOTがMessaging apiを正式にリリースしたので翻訳BOTを作りました。
 
-<a href="https://wise.hackerth.com" target="_blank">https://wise.hackerth.com</a> (shutdown)
+<a href="https://wise.nilth.com" target="_blank">https://wise.nilth.com</a> (shutdown)
 
 公式の通訳BOTも何個かあるのに何で今更翻訳BOT? と思う人もいるかも知らないですが、理由は2つあります。
 

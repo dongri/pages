@@ -8,7 +8,7 @@ tags = ['project', 'ruby']
 
 今月1日仙台言ってRubyKaigi参加して来ました。印象に残ってるのは牡蠣でしたね。本当にうまかったんです。普段勉強会、カンファレンスまったく行かない自分にはRubyKaigiが結構新鮮な感じでした。世界中からRubyを愛してる人達が集まって三日間Rubyについて語るのがすごいと思いました。三日間もあるし、Rubyも結構久しぶりだし、これを機会にRubyでなんか作ってみようと思いました。いろいろ悩んだ結果投げ銭サービスを作ることにしました。
 
-https://merci.hackerth.com
+https://merci.nilth.com
 
 Ruby, Sinatra, Postgres, Bulma, Stripe, Docker を使って構築されてます。Twitterログインでアカウント作って、Twitter Usernameでユーザー検索して少額のお金を投げる非常にシンプルなサービスです。
 

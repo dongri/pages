@@ -9,7 +9,7 @@ goo.glサービス終了のニュースで「短縮URLサービス作ってみ�
 
 その後５日間の休みを取って海外旅行したので、飛行機の中と旅行先で自前の短縮URLサービスを作ってみたくなって作りました。
 
-https://shortener.hackerth.com
+https://shortener.nilth.com
 
 ~~clacky.org ドメインは旅行先のシンガポールClarke Quayから来てます。（ドメインは短くないですが）~~
 
