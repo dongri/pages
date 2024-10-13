@@ -6,6 +6,6 @@ title = "dongri"
 theme = "boro"
 
 [params]
-  message = "Hello World"
+  message = "Hello, World"
 [permalinks]
   post = "/:year/:month/:title/"
