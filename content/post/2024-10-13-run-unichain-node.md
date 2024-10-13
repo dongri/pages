@@ -4,7 +4,7 @@ date = 2024-10-13T18:25:29+09:00
 tags = ['unichain', 'node']
 +++
 
-Unichain node (sepolia) を起動するメモ
+Unichain node (sepolia) 起動操作ログ
 
 # 環境
 ```
