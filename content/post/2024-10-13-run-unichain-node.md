@@ -1,10 +1,10 @@
 +++
-title = "Unichain Node(Sepolia)起動"
+title = "Unichain node (sepolia) 起動"
 date = 2024-10-13T18:25:29+09:00
 tags = ['unichain', 'node']
 +++
 
-Unichain Node(Sepolia)を起動するメモ
+Unichain node (sepolia) を起動するメモ
 
 # 環境
 Cloud: aws
