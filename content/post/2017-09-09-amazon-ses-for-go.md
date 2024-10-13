@@ -21,7 +21,7 @@ import (
 
 func main() {
   from := "noreply@domain.com"
-  to := "dongrify@gmail.com"
+  to := "dongrium@gmail.com"
   title := "amazon ses"
   body := "hello, from ses"
   err := sendSESEmail(from, to, title, body)
@@ -68,7 +68,7 @@ func sendSESEmail(from string, to string, title string, body string) error {
 Amazon SESを有効にしただけではデフォルトsandboxモードになっていて認証済みのメールアドレス宛にしか送れない。
 以下のエラーが出る。
 ```
-MessageRejected: Email address is not verified. The following identities failed the check in region US-EAST-1: dongrify@gmail.com
+MessageRejected: Email address is not verified. The following identities failed the check in region US-EAST-1: dongrium@gmail.com
   status code: 400, request id: c219f19b-94de-11e7-9a09-5d9282910f87
 ```
 

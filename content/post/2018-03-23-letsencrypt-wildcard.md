@@ -17,7 +17,7 @@ $ git clone https://github.com/certbot/certbot.git
 ```
 $ ./certbot-auto certonly --manual \
 -d *.nilth.com -d nilth.com \
--m dongrify@gmail.com \
+-m dongrium@gmail.com \
 --agree-tos \
 --manual-public-ip-logging-ok \
 --preferred-challenges dns-01 \
@@ -174,7 +174,7 @@ The error was: PluginError('An authentication script must be provided with --man
 ```
 $ ./certbot-auto certonly --manual \
 -d *.nilth.com -d nilth.com \
--m dongrify@gmail.com \
+-m dongrium@gmail.com \
 --agree-tos \
 --manual-public-ip-logging-ok \
 --preferred-challenges dns-01 \

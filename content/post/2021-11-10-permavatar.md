@@ -9,7 +9,7 @@ tags = ['NFT', 'on-chain']
 
 ![image](/images/post/2021-11-10/permavatar.png)
 
-[https://twitter.com/dongrify/status/1449698160817803278](https://twitter.com/dongrify/status/1449698160817803278)
+[https://twitter.com/dongrium/status/1449698160817803278](https://twitter.com/dongrium/status/1449698160817803278)
 
 ありがたいことにいろんな方から連絡が来てちょっとびっくりしました。
 
