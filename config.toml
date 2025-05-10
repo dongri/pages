@@ -9,3 +9,6 @@ theme = "boro"
   message = "Hello, World"
 [permalinks]
   post = "/:year/:month/:title/"
+
+[markup.goldmark.renderer]
+  unsafe = true
